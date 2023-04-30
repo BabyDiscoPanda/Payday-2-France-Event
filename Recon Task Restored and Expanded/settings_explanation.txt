@@ -1,0 +1,30 @@
+# Settings explanation
+Here is an explanation of all of the different settings in the mod and their options.
+
+## Enemy Set
+Determines the types of enemies used.
+- Normal: The original v1 enemy set for the most part. Enemies are grouped into the following difficulties: Normal, Hard/Very Hard, Overkill/Mayhem, Death Wish/Death Sentence. 
+N has regular cops, H/VH has better-armed regular cops with the occasional fbi HRT, OK/MH has exclusively hostage rescue team, and DW/DS has hostage rescue team without the pistol-armed field agent. There are also heist-specific enemies: San Francisco, Reservoir dogs and Texas heists all have their location-specific cops, certain "remote" heists will have cops replaced with less well-armed hostage rescue team, and "FBI" locations such as Hoxton Breakout Day 2 and Firestarter Day 2 have more well-armed hostage rescue team on all difficulties, as well as a higher spawn cap. Different "factions" also have their own team: Federales still have FBI HRT (as there are no good alternatives) but the cops are replaced with their own, murkywater have a mix of different guard/scripted spawn enemies, and akan's mercenaries use the "cop" enemies that sometimes appear at the start of the heist.
+- No Cops: Same as "Normal" but every heist is set to be "remote", removing the regular cop enemies in favour of hostage rescue team on all difficulties. This may be preferable since the cops are more likely to get stuck and also have no health scaling. "FBI" missions still have more dangerous groups.
+- Classic: Slightly emulates the original recon groups from before Hoxton's Housewarming, using a heist's "diff" value (see The Long Guide). Normal and Hard will start with regular cops and transition over to blue swat groups as diff increases, with the transition starting after 0.5 and 0 diff on Normal and Hard respectively. Very Hard will start with both regular cops and blue swat at 0 diff, transition over to exclusively blue swat at 0.5 diff, and transition over to Overkill-level hostage rescue team at 1 diff. Any difficulty beyond (and "FBI" missions) will be the same as the "Normal" enemy set, but will add swat groups and a rare chance of regular cops if below 0.5 diff (which doesn't occur in most heists), as well as adding modified assault groups to the reinforce task at diff values over 0.5. Overkill will use blue swat, Mayhem/Death Wish will use gensec lights (including the unused UMP-wielding ones), and Death Sentence will use light zeals. "Remote" missions will exclude regular cops in favour of exclusively swat groups.
+- SMG Swats: Exclusively uses the swat groups that are used in Classic.
+- Assault: Uses the same groups as assault, being functionally the same as current recon but with all the improvements from this mod. Tasers and cloakers are added as a rare spawn chance (although cloakers will still spawn regularly as part of their special objective), and reinforce (if enabled) uses modified groups that each have one less heavy unit, and remove medics (these groups are also used for Classic).
+
+## Murky Equivalents
+I couldn't decide which enemies to use for the murkywater faction so I'm letting you decide. In Normal, No Cops and Classic enemy sets, the murkywater faction uses a mix of "light", "medium" and "heavy" units depending on difficulty. This setting decides those units. Note that not every unit is available on all the murkywater faction heists, so in that case they will be replaced with something else. Additionally, for all settings the "light" unit is the secret service guard from the Whitehouse heist, except for on Hell's Island where the unit is not available, and thus is replaced with an mp5-wielding light swat.
+- Normal: "Medium" unit is an mp5-wielding light swat, and "heavy" unit is a ump-wielding murkywater flashlight-less guard with damage scaling.
+-Flashlight Heavies: Same as "Normal", however some heists (such as Henry's Rock) have flashlight guards available with damage scaling. On these heists, the "heavy" unit will be the flashlight guards, half of them wielding umps and the other half wielding scars.
+- Old: The murky set from v1 of the mod. "Medium" units are the flashlight-less guards that would normally be "heavy", and the "heavy" unit is the scar-wielding flashlight guard (if available, otherwise they are replaced with the "medium" units).
+
+## Bronco guy
+Adds a very tiny chance to spawn a single bronco-wielding cop as a recon or reinforce group. If a bronco-cop isn't available for a particular faction or location, they are usually substituted with a pistol-wielding enemy.
+
+## Spawn during assault
+Determines if and when recon can spawn during assault.
+- Never: Self-explanatory
+- If Hostages: If players have any hostages, the recon task will be enabled. As soon as they are all rescued, recon groups will be retired. Converts don't count.
+- If Any Objective: Recon is enabled during the assault, but they will only spawn if there is a valid objective (hostages, loot, any suppressed civilian).
+- Always: Recon will *always* spawn. If there are no objectives, they will pick the players as an objective.
+
+## Restore Reinforce
+The reinforce task is also restored if this option is picked. It uses the recon units but with different groups for the most part. Unlike recon, reinforce was functionally removed from the game, so this option is purely additive.

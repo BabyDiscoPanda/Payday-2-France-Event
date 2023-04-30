@@ -1,0 +1,43 @@
+{
+	"name" : "Recon Units Restored/Expanded",
+	"description" : "Readds custom units for the recon forces between assaults. Also makes them spawn faster, and extends assault breaks if hostages are present, instead of anticipation (outside of first assault and holdout)",
+	"author" : "staryoshi06",
+	"contact" : "https://modworkshop.net/user/28039",
+	"version" : "2.0.1",
+	"blt_version": 2,
+	"priority" : "50",
+	"hooks" :
+	[
+		{
+			"hook_id" : "lib/tweak_data/groupaitweakdata",
+			"script_path" : "lua/lib/tweak_data/groupaitweakdata.lua"
+		},
+		{
+			"hook_id" : "lib/managers/mission/elementspawnenemygroup",
+			"script_path" : "lua/lib/managers/mission/elementspawnenemygroup.lua"
+		},
+		{
+			"hook_id" : "lib/managers/group_ai_states/groupaistatebesiege",
+			"script_path" : "lua/lib/managers/group_ai_states/groupaistatebesiege.lua"
+		},
+		{
+			"hook_id" : "lib/managers/group_ai_states/groupaistatestreet",
+			"script_path" : "lua/lib/managers/group_ai_states/groupaistatestreet.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "lua/lib/managers/menumanager.lua"
+		}
+	],
+	"updates" :
+	[
+		{
+			"identifier": "star_recon_task_restored_expanded",
+            		"host":
+			{
+				"meta": "https://raw.githubusercontent.com/staryoshi06/ReconTaskRestoredExpanded/main/Recon%20Task%20Restored%20and%20Expanded/updates/meta.json"
+			}
+		}
+	]
+
+}

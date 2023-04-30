@@ -1,0 +1,70 @@
+{
+    "menu_id" : "star_recon_menu",
+    "parent_menu_id" : "blt_options",
+    "title" : "star_recon_menu_title",
+    "description" : "star_recon_menu_desc",
+    "items" : [
+        {
+            "type" : "multiple_choice",
+            "id" : "recon_enemy_set",
+            "title" : "recon_enemy_set_title",
+            "description" : "recon_enemy_set_desc",
+            "callback" : "clbk_recon_enemy_set",
+            "items" : [
+                "enemy_set_normal",
+                "enemy_set_no_cops",
+                "enemy_set_classic",
+                "enemy_set_swats",
+                "enemy_set_assault"
+            ],
+            "value" : "enemy_set"
+        },
+        {
+            "type" : "multiple_choice",
+            "id" : "recon_murky_set",
+            "title" : "recon_murky_set_title",
+            "description" : "recon_murky_set_desc",
+            "callback" : "clbk_recon_murky_set",
+            "items" : [
+                "murky_set_normal",
+                "murky_set_flashlights",
+                "murky_set_old"
+            ],
+            "value" : "murky_set"
+        },
+        {
+            "type" : "toggle",
+            "id" : "recon_bronco_guy",
+            "title" : "recon_bronco_guy_exp",
+            "description" : "recon_bronco_guy_exp",
+            "callback" : "clbk_recon_bronco_guy",
+            "value" : "bronco_guy"
+        },
+        {
+            "type" : "divider",
+            "size" : 8
+        },
+        {
+            "type" : "multiple_choice",
+            "id" : "recon_assault_condition",
+            "title" : "recon_assault_condition_title",
+            "description" : "recon_assault_condition_desc",
+            "callback" : "clbk_recon_assault_condition",
+            "items" : [
+                "assault_condition_never",
+                "assault_condition_hostage",
+                "assault_condition_any",
+                "assault_condition_always"
+            ],
+            "value" : "assault_condition"
+        },
+        {
+            "type" : "toggle",
+            "id" : "recon_allow_reinforce",
+            "title" : "recon_allow_reinforce_title",
+            "description" : "recon_allow_reinforce_desc",
+            "callback" : "clbk_recon_allow_reinforce",
+            "value" : "reinforce_allowed"
+        }
+    ]
+}
